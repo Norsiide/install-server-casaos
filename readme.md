@@ -3,7 +3,7 @@
 # Installation d’un serveur dédié ou VPS sous CasaOS 
 
 * **CasaOS** est un système de type NAS (Network Attached Storage) open source, basé sur Debian, conçu pour être simple à utiliser et accessible à tous. [Lien ver CasaOS](https://casaos.zimaspace.com/)
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/casaos.png" alt="norsiide"></p>
+<p align="center"><img src="https://github.com/Norsiide/install-server-casaos/blob/main/img/casaos.png" alt="norsiide"></p>
 
 * **PS:** Je tiens à rappeler que cette configuration est basée sur mon propre serveur, que je rends public afin de vous aider dans l’installation. Il se peut donc que certaines informations manquent.
 Dans ce cas, n’hésitez pas à me contacter, et je les ajouterai pour faciliter l’installation des prochains utilisateurs.
@@ -29,12 +29,12 @@ curl -fsSL https://get.casaos.io | sudo bash
 ```
 MMaintenant, vous pouvez accéder à CasaOS en utilisant l'URL qui vous a été fournie lors de l'installation. Par exemple : 25.155.215.25.
 
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/update-cli.png"  alt="update cli"></p>
+<p align="center"><img src="https://github.com/Norsiide/install-server-casaos/blob/main/img/update-cli.png"  alt="update cli"></p>
 
 ## Dans cette étape, nous allons changer le port de CasaOS.
 * Accédez au menu des paramètres depuis le web GUI de CasaOS, puis modifiez le port en (9090) à la place du port (80).
 Ce changement est nécessaire car nous allons utiliser un conteneur avec Nginx Proxy Manager, qui nécessite les ports 80 et 443. Par conséquent, nous devons modifier le port par défaut de CasaOS.
-<p align="center"><img src="https://github.com/Norsiide/install-openmediavault/blob/main/img/port-casaos.png"  alt="port casaos"></p>
+<p align="center"><img src="https://github.com/Norsiide/install-server-casaos/blob/main/img/port-casaos.png"  alt="port casaos"></p>
 
 ## Nous allons maintenant procéder à l’installation du script de connexion SSH.
 
@@ -42,7 +42,7 @@ Ce changement est nécessaire car nous allons utiliser un conteneur avec Nginx P
 
 ## Pour installer Neofetch, un script permettant d'afficher les informations système dans le terminal, suivez les étapes ci-dessous :
 
-* Repos [Liens](https://github.com/Norsiide/install-openmediavault/tree/main/neofetch)
+* Repos [Liens](https://github.com/Norsiide/install-server-casaos/tree/main/neofetch)
 
 ## Dans cette section, nous allons résoudre les problèmes courants rencontrés avec Nextcloud.
 - commande de l'occ nextcloud ( docker exec --user www-data -it nom-du-contaire php occ command )
